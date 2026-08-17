@@ -288,7 +288,7 @@ Acceptable implementation approaches include, but are not limited to:
 -   Vendoring, where all dependencies are present in the source tree and the
     build platform can verify no additional artifacts were fetched.
 
-Note: Network isolation is a common mechanism but is not itself required. What
+Note: Network isolation is a common mechanism but is not itself mandated. What
 matters is that the control plane has a structural basis for claiming
 completeness, not that the build ran without network access.
 
@@ -307,7 +307,7 @@ provenance.
 
 Note: This requirement subsumes the "Hermetic" and "Dependencies complete"
 requirements from the initial [draft version
-(v0.1)](../v0.1/requirements.md#hermetic). The v0.1 formulation required network
+(v0.1)](../v0.1/requirements.md#hermetic). The v0.1 formulation mandated network
 isolation; this formulation generalizes that to any technical control that
 achieves the same provenance completeness guarantee. Reproducible builds, also
 part of v0.1 SLSA 4, are now expressed as the
